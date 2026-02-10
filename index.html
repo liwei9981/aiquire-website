@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AiQuire | SME AI Workforce Transformation</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: "#011B64",
+                            900: "#001040",
+                            800: "#011B64",
+                            700: "#1A3173",
+                            600: "#344983",
+                            500: "#4D5F92",
+                            400: "#6776A2",
+                            300: "#808DB1",
+                            200: "#99A4C1",
+                            100: "#CCD1E0",
+                            50: "#F2F3F7",
+                        },
+                        red: {
+                            DEFAULT: "#FF0006",
+                            600: "#D90005",
+                        },
+                        teal: {
+                            DEFAULT: "#00B1B0",
+                            600: "#009190",
+                        },
+                        purple: {
+                            DEFAULT: "#6779BD",
+                        },
+                        background: {
+                            light: "#FFFFFF",
+                            dark: "#0a0f1d",
+                        },
+                        surface: {
+                            light: "#F2F3F7",
+                            dark: "#141c2f",
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(1, 27, 100, 0.08)',
+                        'glow': '0 0 20px rgba(0, 177, 176, 0.3)',
+                    }
+                },
+            },
+        };
+    </script>
+    <style>
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans antialiased selection:bg-teal selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
