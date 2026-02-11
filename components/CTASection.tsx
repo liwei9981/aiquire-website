@@ -18,9 +18,6 @@ export const CTA: React.FC = () => {
           <button className="bg-navy-900 hover:bg-navy-950 text-white px-10 py-5 rounded-full text-lg font-bold transition-all shadow-xl hover:-translate-y-1">
             Schedule Consultation
           </button>
-          <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-teal px-10 py-5 rounded-full text-lg font-bold transition-all">
-            Download Brochure
-          </button>
         </div>
       </div>
     </section>

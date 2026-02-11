@@ -48,14 +48,14 @@ export const ImmersionTrip: React.FC = () => {
       <section className="pt-40 pb-24 bg-navy-900 text-white relative overflow-hidden text-center">
         {/* Decorative Background Main */}
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541873676947-9ec5983478a2?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
-        
+
         {/* Wuxi Feature Image - Left Decorative Circle */}
         <div className="absolute left-[-5%] top-1/2 -translate-y-1/2 w-[35%] aspect-square max-w-[450px] hidden lg:block opacity-40 pointer-events-none z-0">
           <div className="w-full h-full rounded-full overflow-hidden border-[12px] border-white/10 relative shadow-[0_0_50px_rgba(0,177,176,0.2)]">
-            <img 
-              src="/images/wuxi.jpg" 
-              className="w-full h-full object-cover" 
-              alt="Wuxi Landmark" 
+            <img
+              src="/images/wuxi.jpg"
+              className="w-full h-full object-cover"
+              alt="Wuxi Landmark"
             />
             <div className="absolute inset-0 bg-navy-900/20"></div>
           </div>
@@ -64,24 +64,24 @@ export const ImmersionTrip: React.FC = () => {
         {/* Nanjing Feature Image - Right Decorative Circle */}
         <div className="absolute right-[-5%] top-1/2 -translate-y-1/2 w-[35%] aspect-square max-w-[450px] hidden lg:block opacity-40 pointer-events-none z-0">
           <div className="w-full h-full rounded-full overflow-hidden border-[12px] border-white/10 relative shadow-[0_0_50px_rgba(103,121,189,0.2)]">
-            <img 
-              src="/images/nanjing.png" 
-              className="w-full h-full object-cover" 
-              alt="Nanjing Landmark" 
+            <img
+              src="/images/nanjing.png"
+              className="w-full h-full object-cover"
+              alt="Nanjing Landmark"
             />
             <div className="absolute inset-0 bg-navy-900/20"></div>
           </div>
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-b from-navy-900/40 via-navy-900/80 to-navy-900 z-[1]"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red/10 border border-red/30 text-red text-xs font-bold uppercase tracking-widest mb-8">
             <span className="w-2 h-2 rounded-full bg-red animate-pulse"></span>
             March 23 – 27, 2026
           </div>
           <h1 className="text-5xl lg:text-7xl xl:text-8xl font-display font-extrabold mb-8 leading-tight drop-shadow-lg max-w-5xl mx-auto">
-            Connect and Learn within China’s <br/><span className="text-teal">Innovation Ecosystem</span><span className="text-red">.</span>
+            Connect and Learn within China’s <br /><span className="text-teal">Innovation Ecosystem</span><span className="text-red">.</span>
           </h1>
           <p className="text-2xl text-navy-100 max-w-4xl mx-auto leading-relaxed font-light mb-12 opacity-90">
             An exclusive 5-day immersion into the heart of China’s AI, Robotics, and Advanced Manufacturing ecosystem in Wuxi & Nanjing.
@@ -200,11 +200,11 @@ export const ImmersionTrip: React.FC = () => {
             <h2 className="text-4xl font-display font-bold mb-4">Journey Timeline<span className="text-red">.</span></h2>
             <p className="text-navy-200 text-lg">5 Days of Strategic Immersion from Wuxi to Nanjing</p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto relative">
             {/* Timeline Line */}
             <div className="absolute left-[27px] top-0 bottom-0 w-1 bg-gradient-to-b from-teal via-purple to-red opacity-30"></div>
-            
+
             <div className="space-y-12">
               {itinerary.map((day, idx) => (
                 <div key={idx} className="relative pl-20 group">
@@ -212,7 +212,7 @@ export const ImmersionTrip: React.FC = () => {
                   <div className={`absolute left-0 top-0 w-14 h-14 rounded-full border-4 border-navy-900 bg-navy-800 flex items-center justify-center z-10 transition-all duration-500 ${activeDay === day.day ? 'scale-110 shadow-glow border-teal' : 'group-hover:border-teal/50'}`}>
                     <span className={`text-xl font-display font-bold ${activeDay === day.day ? 'text-teal' : 'text-white/40'}`}>{day.day}</span>
                   </div>
-                  
+
                   <div className={`p-8 rounded-[2.5rem] bg-white/5 backdrop-blur-sm border border-white/10 transition-all cursor-pointer ${activeDay === day.day ? 'bg-white/10 border-white/20' : ''}`} onClick={() => setActiveDay(day.day)}>
                     <div className="flex flex-wrap items-center gap-4 mb-4">
                       <span className="px-3 py-1 rounded-full bg-teal/20 text-teal text-xs font-bold uppercase tracking-widest">{day.location}</span>
@@ -268,7 +268,7 @@ export const ImmersionTrip: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-navy-800 to-navy-900 rounded-[3rem] p-12 lg:p-20 text-white shadow-2xl relative overflow-hidden">
             <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-teal/20 rounded-full blur-[100px]"></div>
-            
+
             <div className="relative z-10 grid lg:grid-cols-2 gap-16">
               <div>
                 <h2 className="text-4xl lg:text-5xl font-display font-bold mb-8">Pricing & Logistics<span className="text-red">.</span></h2>
@@ -277,7 +277,7 @@ export const ImmersionTrip: React.FC = () => {
                   <div className="text-xl font-bold text-white mb-1">Grant Support Available</div>
                   <div className="text-sm opacity-80">Subsidies up to <span className="text-2xl font-black text-red-400">SGD 30,000</span> (Subject to evaluation)</div>
                 </div>
-                
+
                 <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
                   <span className="material-symbols-outlined text-teal">inventory_2</span>
                   What’s Included:
@@ -289,7 +289,7 @@ export const ImmersionTrip: React.FC = () => {
                   <li className="flex items-center gap-3"><span className="material-symbols-outlined text-teal">handshake</span> Pre-trip Commercial Matching</li>
                 </ul>
               </div>
-              
+
               <div className="flex flex-col justify-center">
                 <div className="bg-white/5 border border-white/10 backdrop-blur-md p-10 rounded-[3rem] shadow-xl">
                   <h3 className="text-3xl font-bold mb-6 text-center">Ready to Pivot?</h3>
@@ -297,10 +297,6 @@ export const ImmersionTrip: React.FC = () => {
                   <div className="space-y-4">
                     <button className="w-full bg-teal hover:bg-teal-600 text-white py-5 rounded-2xl font-bold transition-all shadow-glow text-xl">
                       Register Interest Now
-                    </button>
-                    <button className="w-full bg-transparent border border-white/20 hover:bg-white/5 text-white py-5 rounded-2xl font-bold transition-all flex items-center justify-center gap-2">
-                      <span className="material-symbols-outlined">download</span>
-                      Download PDF Brochure
                     </button>
                   </div>
                   <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm text-navy-400">

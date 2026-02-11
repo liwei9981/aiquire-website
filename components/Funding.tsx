@@ -82,7 +82,7 @@ export const Funding: React.FC = () => {
             <h2 className="text-3xl font-display font-bold text-navy-900 dark:text-white shrink-0">Primary ESG AI Grants</h2>
             <div className="h-px bg-slate-200 dark:bg-navy-800 flex-grow"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {esgGrants.map((grant, i) => (
               <div key={i} className="bg-white dark:bg-navy-900/50 rounded-[2.5rem] p-8 border border-slate-100 dark:border-navy-800 shadow-sm hover:shadow-xl transition-all group">
@@ -149,7 +149,7 @@ export const Funding: React.FC = () => {
                 <p className="text-sm text-slate-600 dark:text-slate-300">Solutions from Advanced Digital Solutions (ADS) can transition to PSG after successful piloting.</p>
               </div>
             </div>
-            
+
             <div className="grid sm:grid-cols-2 gap-6">
               {imdaGrants.map((grant, i) => (
                 <div key={i} className="p-8 bg-slate-50 dark:bg-navy-900/50 rounded-3xl border border-slate-100 dark:border-navy-800 hover:border-teal/50 transition-colors">
@@ -207,7 +207,7 @@ export const Funding: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-teal p-12 rounded-[3rem] text-white flex flex-col">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy-900/20 text-[10px] font-bold uppercase tracking-widest w-fit mb-6">
                 Most Popular SME Tool
@@ -242,7 +242,6 @@ export const Funding: React.FC = () => {
             </p>
             <div className="flex justify-center gap-4">
               <button className="bg-teal text-white px-8 py-3 rounded-full font-bold shadow-glow hover:opacity-90 transition-all">Check Eligibility</button>
-              <button className="border border-slate-200 dark:border-navy-700 text-slate-600 dark:text-slate-300 px-8 py-3 rounded-full font-bold hover:bg-slate-100 dark:hover:bg-navy-800 transition-all">Download Guide</button>
             </div>
           </div>
         </div>
