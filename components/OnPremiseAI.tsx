@@ -30,23 +30,20 @@ export const OnPremiseAI: React.FC = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-navy-900 to-navy-600 dark:from-white dark:to-slate-400">AI Employee</span><span className="text-red">.</span>
                         </h2>
                         <p className="text-slate-600 dark:text-slate-400 text-lg lg:text-xl leading-relaxed mb-10 font-light">
-                            Bring the power of enterprise-grade AI directly into your secure infrastructure. Our compact, high-performance hardware solutions are pre-configured with AiQuire's proprietary AI models, ensuring total data sovereignty and zero-latency performance.
+                            Bring the power of enterprise-grade AI directly into your secure infrastructure. Our compact, high-performance hardware solutions are pre-configured with industry-leading AI capabilities, ensuring total data sovereignty and zero-latency performance for your specific business workflows.
                         </p>
 
-                        <div className="space-y-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
                             {[
-                                { icon: 'lock', title: 'Total Data Sovereignty', desc: 'Your data never leaves your premises. Complete privacy and security compliance.' },
-                                { icon: 'speed', title: 'Zero-Latency Performance', desc: 'Instant response times with local processing, independent of internet connectivity.' },
-                                { icon: 'settings_suggest', title: 'Ready-to-Deploy', desc: 'Plug-and-play setup with pre-integrated AiQuire employee workflows.' }
+                                { icon: 'lock', title: 'Total Data Sovereignty' },
+                                { icon: 'speed', title: 'Zero-Latency Performance' },
+                                { icon: 'settings_suggest', title: 'Ready-to-Deploy' }
                             ].map((item, idx) => (
-                                <div key={idx} className="flex gap-4 p-4 rounded-2xl hover:bg-slate-50 dark:hover:bg-navy-800/50 transition-colors group">
+                                <div key={idx} className="flex flex-col items-center lg:items-start xl:items-center gap-3 p-4 rounded-2xl hover:bg-slate-50 dark:hover:bg-navy-800/50 transition-colors group text-center lg:text-left xl:text-center">
                                     <div className="flex-shrink-0 w-12 h-12 bg-white dark:bg-navy-800 rounded-xl shadow-sm border border-slate-100 dark:border-navy-700 flex items-center justify-center group-hover:scale-110 transition-transform">
                                         <span className="material-symbols-outlined text-teal">{item.icon}</span>
                                     </div>
-                                    <div>
-                                        <h4 className="font-bold text-navy-900 dark:text-white mb-1">{item.title}</h4>
-                                        <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">{item.desc}</p>
-                                    </div>
+                                    <h4 className="font-bold text-navy-900 dark:text-white text-sm uppercase tracking-wider">{item.title}</h4>
                                 </div>
                             ))}
                         </div>
