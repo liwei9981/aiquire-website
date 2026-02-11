@@ -7,6 +7,7 @@ import { Features } from './components/Features.tsx';
 import { Phases } from './components/Phases.tsx';
 import { FrontFeatures } from './components/FrontFeatures.tsx';
 import { Offerings } from './components/Offerings.tsx';
+import { OnPremiseAI } from './components/OnPremiseAI.tsx';
 import { CTA } from './components/CTASection.tsx';
 import { Footer } from './components/Footer.tsx';
 import { ImmersionTrip } from './components/ImmersionTrip.tsx';
@@ -41,6 +42,7 @@ const App: React.FC = () => {
             <Hero />
             <FrontFeatures />
             <Offerings />
+            <OnPremiseAI />
           </>
         ) : activeSection === 'workshop' ? (
           <>
