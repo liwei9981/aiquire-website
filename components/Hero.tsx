@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
               </h1>
 
               <p className="text-xl lg:text-2xl text-slate-500 dark:text-slate-400 max-w-xl leading-relaxed pt-6 font-light">
-                Transforce helps companies learn, build, and deploy an AI workforce together—transforming technology into practical growth through secured and customized AI solutions via our dedicated workshop.
+                Transfong helps companies learn, build, and deploy secure, scalable AI workforces—transforming technology into practical growth.
               </p>
             </div>
           </div>

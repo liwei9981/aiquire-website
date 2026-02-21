@@ -8,10 +8,10 @@ interface HeaderProps {
   activeSection: string;
 }
 
-export const TransforceLogo: React.FC<{ className?: string; isDark?: boolean }> = ({ className = "h-8", isDark = false }) => (
+export const TransfongLogo: React.FC<{ className?: string; isDark?: boolean }> = ({ className = "h-8", isDark = false }) => (
   <div className={`flex items-center select-none ${className}`}>
     <span className={`font-display font-extrabold text-2xl tracking-tighter ${isDark ? 'text-white' : 'text-navy-900'}`}>
-      Transforce<span className="text-red">.</span>
+      Transfong<span className="text-red">.</span>
     </span>
   </div>
 );
@@ -42,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme, isDarkMode, onNavig
               onClick={() => handleNavigate('landing')}
               className="flex-shrink-0 flex items-center group transition-transform hover:scale-[1.02]"
             >
-              <TransforceLogo isDark={isDarkMode} className="h-10" />
+              <TransfongLogo isDark={isDarkMode} className="h-10" />
             </button>
 
             {/* Desktop Navigation */}

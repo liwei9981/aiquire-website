@@ -20,7 +20,7 @@ export const Features: React.FC = () => {
     {
       icon: 'school',
       title: 'Expert resource',
-      desc: 'Tap into the combined expertise of NTU, Transforce, and our global partners to access proven strategies and reliable AI technology.',
+      desc: 'Tap into the combined expertise of NTU, Transfong, and our global partners to access proven strategies and reliable AI technology.',
       borderColor: 'hover:border-purple',
       iconColor: 'text-purple'
     }

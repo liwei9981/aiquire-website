@@ -20,7 +20,7 @@ export const ProgramOverview: React.FC = () => {
           </h1>
 
           <p className="text-xl lg:text-2xl text-navy-100 font-light leading-relaxed mb-10 opacity-90 animate-in fade-in slide-in-from-bottom duration-700 delay-200">
-            Learn, Co-create and Deploy: A hands-on path to success offered by Transforce in partnership with NTU to help you co-create your own digital workforce.
+            Learn, Co-create and Deploy: A hands-on path to success offered by Transfong in partnership with NTU to help you co-create your own digital workforce.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 animate-in fade-in slide-in-from-bottom duration-700 delay-300">

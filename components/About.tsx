@@ -7,7 +7,7 @@ export const About: React.FC = () => {
       name: "Dr. Li Wei",
       role: "Co-founder and Chairman",
       image: "/images/liwei.png", // Dr. Li Wei
-      bio: "Dr. Li Wei is dedicated to fostering the cross-border growth of tech companies, a key focus at Transforce. With nearly 20 years of experience in technology transfer and commercialization, including over a decade at Singapore's A*STAR, he is skilled in investment, incubation, IP management, and international collaboration. He holds a Ph.D. and Bachelor's in Microelectronics from Nanyang Technological University, and an MBA from INSEAD.",
+      bio: "Dr. Li Wei is dedicated to fostering the cross-border growth of tech companies, a key focus at Transfong. With nearly 20 years of experience in technology transfer and commercialization, including over a decade at Singapore's A*STAR, he is skilled in investment, incubation, IP management, and international collaboration. He holds a Ph.D. and Bachelor's in Microelectronics from Nanyang Technological University, and an MBA from INSEAD.",
       accent: "teal",
       linkedin: "https://www.linkedin.com/in/wei-li-77363526/"
     },
@@ -104,7 +104,7 @@ export const About: React.FC = () => {
             {[
               { icon: 'hub', title: "Ecosystem Focus", desc: "Connecting local SMEs to global innovation hubs in the Yangtze River Delta." },
               { icon: 'insights', title: "Result Driven", desc: "We don't just consult; we build working AI prototypes that drive ROI." },
-              { icon: 'groups', title: "Partnership", desc: "Proudly collaborating with NTU and Transforce and top-tier industrial leaders." }
+              { icon: 'groups', title: "Partnership", desc: "Proudly collaborating with NTU and Transfong and top-tier industrial leaders." }
             ].map((v, i) => (
               <div key={i} className="bg-white dark:bg-navy-900/40 p-10 rounded-[2.5rem] border border-slate-100 dark:border-navy-800 text-center hover:shadow-lg transition-all group">
                 <span className="material-symbols-outlined text-5xl text-teal mb-6 group-hover:scale-110 transition-transform">{v.icon}</span>
