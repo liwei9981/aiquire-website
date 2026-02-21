@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20 items-center">
           <div className="space-y-10 animate-in fade-in slide-in-from-left duration-1000">
             {/* Pill matching the screenshot precisely */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-navy-800 border border-navy-100 dark:border-navy-600 text-navy-900 dark:text-teal text-[10px] font-black uppercase tracking-widest shadow-sm">
+            <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white dark:bg-navy-800 border border-navy-100 dark:border-navy-600 text-navy-900 dark:text-teal text-xs font-black uppercase tracking-widest shadow-md">
               <span className="w-2 h-2 rounded-full bg-red-600"></span>
               POWERING SINGAPORE'S DIGITAL FUTURE
             </div>

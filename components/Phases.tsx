@@ -71,7 +71,7 @@ export const Phases: React.FC = () => {
 
               {/* Left Column: Phase Identifier */}
               <div className="lg:sticky lg:top-40 space-y-6">
-                <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-${p.accent}/10 border border-${p.accent}/20 text-${p.accent} text-[10px] font-bold uppercase tracking-widest mb-4`}>
+                <div className={`inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-${p.accent}/10 border border-${p.accent}/20 text-${p.accent} text-xs font-black uppercase tracking-widest mb-6 shadow-sm`}>
                   {p.phaseLabel}
                 </div>
 

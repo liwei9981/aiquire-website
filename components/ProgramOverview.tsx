@@ -9,7 +9,7 @@ export const ProgramOverview: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-purple/5 rounded-full blur-[100px] -ml-20"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal/10 border border-teal/30 text-teal text-[10px] font-bold uppercase tracking-widest mb-8 animate-in fade-in slide-in-from-top duration-700">
+        <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-teal/10 border border-teal/30 text-teal text-xs font-black uppercase tracking-widest mb-10 animate-in fade-in slide-in-from-top duration-700 shadow-lg shadow-teal/5">
           NTU Partnership Workshop
         </div>
 
