@@ -40,9 +40,8 @@ const App: React.FC = () => {
         {activeSection === 'landing' ? (
           <>
             <Hero />
-            <FrontFeatures />
             <Offerings />
-            <OnPremiseAI />
+            <FrontFeatures />
           </>
         ) : activeSection === 'workshop' ? (
           <>
@@ -65,7 +64,7 @@ const App: React.FC = () => {
                 Content coming soon<span className="text-red">.</span>
               </h2>
               <p className="text-slate-500 dark:text-slate-400 text-lg mb-12">
-                We're currently building something amazing for the {activeSection === 'fun' ? 'AI for fun' : activeSection} section. Stay tuned!
+                We're currently building something amazing for the {activeSection} section. Stay tuned!
               </p>
               <button
                 onClick={() => setActiveSection('landing')}

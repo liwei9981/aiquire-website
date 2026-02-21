@@ -8,10 +8,10 @@ interface HeaderProps {
   activeSection: string;
 }
 
-export const AiQuireLogo: React.FC<{ className?: string; isDark?: boolean }> = ({ className = "h-8", isDark = false }) => (
+export const TransforceLogo: React.FC<{ className?: string; isDark?: boolean }> = ({ className = "h-8", isDark = false }) => (
   <div className={`flex items-center select-none ${className}`}>
     <span className={`font-display font-extrabold text-2xl tracking-tighter ${isDark ? 'text-white' : 'text-navy-900'}`}>
-      AiQuire<span className="text-red">.</span>
+      Transforce<span className="text-red">.</span>
     </span>
   </div>
 );
@@ -24,7 +24,6 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme, isDarkMode, onNavig
     { label: 'AI Workshop', id: 'workshop' },
     { label: 'AI Immersion Trip', id: 'immersion' },
     { label: 'AI Employees', id: 'employees' },
-    { label: 'AI for fun', id: 'fun' },
     { label: 'AI Grants', id: 'grants' },
     { label: 'About', id: 'about' },
   ];
@@ -43,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme, isDarkMode, onNavig
               onClick={() => handleNavigate('landing')}
               className="flex-shrink-0 flex items-center group transition-transform hover:scale-[1.02]"
             >
-              <AiQuireLogo isDark={isDarkMode} className="h-10" />
+              <TransforceLogo isDark={isDarkMode} className="h-10" />
             </button>
 
             {/* Desktop Navigation */}
@@ -53,8 +52,8 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme, isDarkMode, onNavig
                   key={item.id}
                   onClick={() => handleNavigate(item.id)}
                   className={`px-4 py-2 text-sm font-bold transition-all rounded-full ${activeSection === item.id
-                      ? 'bg-teal/10 text-teal'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-navy-800 dark:hover:text-teal'
+                    ? 'bg-teal/10 text-teal'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-navy-800 dark:hover:text-teal'
                     }`}
                 >
                   {item.label}
@@ -98,8 +97,8 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme, isDarkMode, onNavig
               key={item.id}
               onClick={() => handleNavigate(item.id)}
               className={`block w-full text-left px-4 py-3 text-base font-bold transition-all rounded-xl ${activeSection === item.id
-                  ? 'bg-teal/10 text-teal'
-                  : 'text-slate-600 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-navy-800'
+                ? 'bg-teal/10 text-teal'
+                : 'text-slate-600 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-navy-800'
                 }`}
             >
               {item.label}

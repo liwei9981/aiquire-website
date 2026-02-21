@@ -20,7 +20,7 @@ export const Features: React.FC = () => {
     {
       icon: 'school',
       title: 'Expert resource',
-      desc: 'Tap into the combined expertise of NTU, AiQuire, and our global partners to access proven strategies and reliable AI technology.',
+      desc: 'Tap into the combined expertise of NTU, Transforce, and our global partners to access proven strategies and reliable AI technology.',
       borderColor: 'hover:border-purple',
       iconColor: 'text-purple'
     }
@@ -40,7 +40,7 @@ export const Features: React.FC = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {cards.map((card, idx) => (
-            <div 
+            <div
               key={idx}
               className={`group p-8 rounded-2xl bg-slate-50 dark:bg-surface-dark border border-slate-100 dark:border-navy-700 ${card.borderColor} transition-all duration-300 flex flex-col h-full hover:shadow-xl dark:hover:bg-navy-900/40`}
             >

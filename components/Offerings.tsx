@@ -6,23 +6,23 @@ export const Offerings: React.FC = () => {
     {
       num: '01',
       label: 'Learn',
-      title: 'Strategy & Readiness',
+      title: 'AI Workshop and Immersion Trip',
       accent: 'teal',
-      desc: 'Through AI transformation sessions, specialized courses, and joint workshops with our partners, we map AI to your specific business goals while assessing tech readiness to identify high-value workflows.'
+      desc: 'AI workshops to learn the latest AI tools and developments and their application to business, including AI applications in Singapore and overseas.'
     },
     {
       num: '02',
       label: 'Build',
-      title: 'Co-Creation & Prototyping',
+      title: 'AI Agent and System Co-Creation',
       accent: 'purple',
-      desc: 'We work together to build a functional Minimum Viable Product (MVP) tailored to your unique business data and workflows. Our approach ensures your team is fully aligned as we develop AI employees that deliver immediate Proof of Value (POV).'
+      desc: 'A dedicated project to co-develop tailored AI prototypes and intelligent workforce orchestration to provide proof of value for your business.'
     },
     {
       num: '03',
       label: 'Deploy',
-      title: 'Customization and Security',
+      title: 'Transform Workforce with Enterprise-Grade AI',
       accent: 'red',
-      desc: 'We launch secure, on-premise enterprise-grade AI solutions that meet stringent security standards. Our focus is on intuitive usability and seamless integration into your management workflows to ensure daily efficiency and lasting value.'
+      desc: 'Transform your current workforce by deploying secure, on-premise, and enterprise-grade AI solutions that drive growth, while re-skilling your team for new AI capabilities.'
     }
   ];
 
@@ -39,12 +39,12 @@ export const Offerings: React.FC = () => {
             <span className="text-teal font-bold italic">Learn</span>, <span className="text-purple font-bold italic">Build</span>, and <span className="text-red font-bold italic">Deploy</span>.
           </p>
         </div>
-        
+
         <div className="grid lg:grid-cols-3 gap-10">
           {items.map((item, idx) => (
             <div key={idx} className="relative group flex">
               <div className={`flex-grow h-full bg-navy-800/40 backdrop-blur-md p-10 lg:p-12 rounded-[3.5rem] border border-navy-700/50 hover:border-${item.accent} transition-all duration-500 shadow-2xl flex flex-col items-start text-left hover:-translate-y-2`}>
-                
+
                 {/* Obvious Label Badge */}
                 <div className="flex items-center justify-between w-full mb-10">
                   <div className={`px-6 py-2.5 rounded-full bg-${item.accent} text-white text-sm font-black uppercase tracking-[0.2em] shadow-lg shadow-${item.accent}/20`}>
@@ -58,11 +58,11 @@ export const Offerings: React.FC = () => {
                 <h3 className="text-2xl lg:text-3xl font-display font-bold mb-6 group-hover:text-white transition-colors">
                   {item.title}
                 </h3>
-                
+
                 <p className="text-navy-100/80 text-lg leading-relaxed font-light flex-grow mb-10">
                   {item.desc}
                 </p>
-                
+
                 <div className="mt-auto w-full pt-8 border-t border-navy-700/50">
                   <button className={`flex items-center gap-3 text-${item.accent} font-black text-sm uppercase tracking-widest hover:gap-5 transition-all group-hover:translate-x-1`}>
                     Get Started <span className="material-symbols-outlined font-bold">arrow_forward</span>

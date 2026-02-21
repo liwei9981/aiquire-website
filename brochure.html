@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforce Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: "#011B64",
+                        teal: "#00B1B0",
+                        red: "#FF0006",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #011B64 0%, #001040 100%);
+        }
+
+        .glossy-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans text-slate-900">
+    <!-- Main Poster Container (A4 Aspect Ratio) -->
+    <div class="w-[794px] h-[1123px] mx-auto relative overflow-hidden flex flex-col items-stretch">
+
+        <!-- Header / Hero Section -->
+        <div class="h-[400px] gradient-bg relative p-12 text-white overflow-hidden">
+            <div class="absolute top-[-100px] right-[-100px] w-80 h-80 bg-teal/20 rounded-full blur-[80px]"></div>
+            <div class="absolute bottom-[-50px] left-[-50px] w-64 h-64 bg-red/10 rounded-full blur-[60px]"></div>
+
+            <div class="relative z-10 flex flex-col justify-between h-full">
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                            <span class="text-navy font-black text-2xl">A</span>
+                        </div>
+                        <span class="text-2xl font-display font-bold tracking-tight">Transforce</span>
+                    </div>
+                    <div class="text-teal font-bold uppercase tracking-[0.3em] text-xs mb-4">Powering Singapore's
+                        Digital Future</div>
+                    <h1 class="text-5xl font-display font-extrabold leading-[1.1] mb-6">
+                        SME AI Workforce <br /><span class="text-teal">Transformation</span><span
+                            class="text-red">.</span>
+                    </h1>
+                </div>
+
+                <div class="flex gap-8">
+                    <div class="bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md border border-white/20">
+                        <div class="text-[10px] uppercase font-bold text-teal-300">Fast Implementation</div>
+                        <div class="text-sm font-semibold">Deploy in 14 Days</div>
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md border border-white/20">
+                        <div class="text-[10px] uppercase font-bold text-red-400">Government Support</div>
+                        <div class="text-sm font-semibold">SME Grant Eligible</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Image -->
+            <div class="absolute right-0 bottom-0 w-[350px] h-[350px] opacity-40">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                    <path fill="#00B1B0"
+                        d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87.1,-15.7,85.2,-0.7C83.3,14.2,76,31.2,66.1,45.4C56.2,59.6,43.7,71,29.3,77.3C14.9,83.6,-1.4,84.7,-18.3,81.1C-35.1,77.6,-52.4,69.4,-65.4,56.1C-78.4,42.8,-87.1,24.4,-89.1,5.2C-91,-14,-86.2,-34,-74.6,-49.3C-63,-64.5,-44.6,-75.1,-27.4,-80.1C-10.2,-85.1,5.8,-84.6,22.4,-81C32.4,-78.9,31.4,-83.7,44.7,-76.4Z"
+                        transform="translate(100 100)" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="flex-grow bg-slate-50 p-12 grid grid-cols-2 gap-8">
+
+            <!-- Left Column -->
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-navy font-display font-bold text-xl mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-teal">rocket_launch</span>
+                        Featured Offerings
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+                            <h3 class="font-bold text-lg mb-1">AI Workshop</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed uppercase tracking-wider mb-2">Strategy &
+                                Roadmap</p>
+                            <p class="text-sm text-slate-600">Tailored 2-day session to audit your business and build a
+                                custom AI integration roadmap.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+                            <h3 class="font-bold text-lg mb-1">Digital Workforce</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed uppercase tracking-wider mb-2">AI Employees
+                            </p>
+                            <p class="text-sm text-slate-600">Deploy digital assistants like Max (Marketing) or Layla
+                                (Legal) to handle repetitive tasks 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-navy font-display font-bold text-xl mb-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-teal">verified</span>
+                        Why Choose Us
+                    </h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-sm text-slate-700">
+                            <span class="material-symbols-outlined text-teal text-lg">check_circle</span>
+                            Deep Tech Supply Chain Mastery
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700">
+                            <span class="material-symbols-outlined text-teal text-lg">check_circle</span>
+                            Direct Networking with Tech Leaders
+                        </li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700">
+                            <span class="material-symbols-outlined text-teal text-lg">check_circle</span>
+                            Proof-of-Concept ready prototypes
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column (Spotlight on Immersion Trip) -->
+            <div class="bg-navy-900 rounded-[3rem] p-8 text-white relative flex flex-col">
+                <div class="text-red text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Upcoming Event</div>
+                <h2 class="text-3xl font-display font-bold mb-4">AI Immersion <br /><span class="text-teal">Trip
+                        2026.</span></h2>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-teal text-sm">calendar_month</span>
+                    <span class="text-sm font-semibold">March 23 – 27, 2026</span>
+                </div>
+
+                <p class="text-sm text-navy-100 font-light leading-relaxed mb-6 opacity-80">
+                    Join us for an exclusive 5-day journey into the heart of China’s Innovation Ecosystem: Wuxi &
+                    Nanjing.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-teal/20 flex items-center justify-center text-teal text-xs font-bold">
+                            W</div>
+                        <span class="text-sm font-medium">IoT Capital (Wuxi)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-8 h-8 rounded-full bg-purple/20 flex items-center justify-center text-purple text-xs font-bold">
+                            N</div>
+                        <span class="text-sm font-medium">R&D Engine (Nanjing)</span>
+                    </div>
+                </div>
+
+                <div class="mt-auto bg-white/5 rounded-3xl p-6 border border-white/10">
+                    <div class="text-xs uppercase font-bold text-teal-400 mb-1">Standard Price</div>
+                    <div class="text-2xl font-display font-black">SGD 2,999</div>
+                    <div class="mt-2 text-[10px] opacity-60">Includes meals, transport & curated site visits.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Footer -->
+        <div class="h-[120px] bg-white border-t border-slate-200 px-12 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-navy font-display font-bold text-lg leading-tight">Prepare for the future<span
+                        class="text-red">.</span></span>
+                <span class="text-sm text-slate-400">www.aiquire.sg</span>
+            </div>
+            <div class="flex gap-4">
+                <div class="text-right">
+                    <div class="text-[10px] uppercase font-bold text-slate-400">Contact Us</div>
+                    <div class="text-sm font-semibold">hello@aiquire.sg</div>
+                </div>
+                <div class="w-20 h-20 bg-slate-100 rounded-xl flex items-center justify-center text-slate-300">
+                    <span class="material-symbols-outlined text-4xl">qr_code_2</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
