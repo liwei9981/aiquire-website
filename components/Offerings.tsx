@@ -13,14 +13,14 @@ export const Offerings: React.FC = () => {
     {
       num: '02',
       label: 'Build',
-      title: 'AI Agent and System Co-Creation',
+      title: 'Customised AI Co-Creation',
       accent: 'purple',
       desc: 'A dedicated project to co-develop tailored AI prototypes and intelligent workforce orchestration to provide proof of value for your business.'
     },
     {
       num: '03',
       label: 'Deploy',
-      title: 'Transform Workforce with Enterprise-Grade AI',
+      title: 'Enterprise-Grade AI Workforce',
       accent: 'red',
       desc: 'Transform your current workforce by deploying secure, on-premise, and enterprise-grade AI solutions that drive growth, while re-skilling your team for new AI capabilities.'
     }
